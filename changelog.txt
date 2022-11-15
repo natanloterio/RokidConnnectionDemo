@@ -1,0 +1,3 @@
+* Changelog version 1.0.28
+
+** [Add] Mixed zoom strategy with native Rokid SDK and Yuv transformation

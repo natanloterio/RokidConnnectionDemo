@@ -1,0 +1,41 @@
+fastlane_version "2.68.0"
+default_platform :android
+
+platform :android do
+    desc :"Submit a new Beta Build to Firebase app distribution"
+    lane :stage do
+        # build the release variant
+        build_android_app(task: "assembleDebug")
+
+        # changelog from a txt file is passed as the release note
+        # changelog = File.read("../changelog.txt")
+
+        # submit build to firebase app distribution
+        firebase_app_distribution(
+            app: "1:1097182972774:android:336652fa41ed3806aa96a7",
+            testers: "natanloterio@gmail.com,stephen.hicks@oxsight.co.uk, tom.learmonth@oxsight.co.uk",
+            release_notes_file: "./changelog.txt",
+            groups: "alpha",
+            firebase_cli_token: "1//09Yeh4EJleO_HCgYIARAAGAkSNwF-L9Ir06kauWKVPERH6354v4X1CQEPESMThOYGouytZCbwVeX95qQqD9fBVRA-zwOiLjHqXUo"
+        )
+
+        # send slack success notification after distribution completes
+#         slack(
+#           slack_url: "https://hooks.slack.com/services/...",
+#           message: "New build is available for testing",
+#           success: true,
+#           default_payloads: [:git_branch, :last_git_commit_message]
+#         )
+    end
+
+    # handle exception
+#     error do |lane, exception, options|
+#         # send slack failure notification
+#         slack(
+#             message: "Build failed with exception: #{exception}",
+#             slack_url: "https://hooks.slack.com/services/...",
+#             success: false,
+#             default_payloads: [:git_branch, :last_git_commit_message]
+#         )
+#     end
+end

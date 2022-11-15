@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1097182972774",
+    "project_id": "oxsight-4eebc",
+    "storage_bucket": "oxsight-4eebc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097182972774:android:336652fa41ed3806aa96a7",
+        "android_client_info": {
+          "package_name": "com.oxsightglobal.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097182972774-19n12ntcms4saag8836i0pkemo8d92aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUxGxPsMJQvh8CGbNS3FavWwnD8kVMcTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097182972774-19n12ntcms4saag8836i0pkemo8d92aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097182972774:android:7cbbb80fba843574aa96a7",
+        "android_client_info": {
+          "package_name": "com.oxsightglobal.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097182972774-19n12ntcms4saag8836i0pkemo8d92aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUxGxPsMJQvh8CGbNS3FavWwnD8kVMcTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097182972774-19n12ntcms4saag8836i0pkemo8d92aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
