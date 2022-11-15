@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rokid Demo</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connected">Connected</string>
+    <string name="press_glass_button">Press glasses button</string>
+    <string name="plug_the_glasses_to_the_device">Plug the glasses to the device</string>
+</resources>
